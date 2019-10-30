@@ -1,4 +1,4 @@
-const config = require("./src/config")
+const config = require("./src/config");
 
 module.exports = {
   siteMetadata: {
@@ -35,7 +35,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "content",
-        path: `${__dirname}/src/content/`,
+        path: `${__dirname}/src/content`,
       },
     },
     {
@@ -68,4 +68,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
