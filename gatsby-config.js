@@ -21,11 +21,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `AlecChen`,
+        short_name: `AlecChen`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: config.darkNavyColor,
+        theme_color: config.darkNavyColor,
         display: `minimal-ui`,
         icon: `src/images/emojis/male-tech.png`, // This path is relative to the root of the site.
       },
