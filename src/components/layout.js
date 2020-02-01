@@ -17,21 +17,25 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          siteUrl
+          description
         }
       }
     }
   `);
 
   return (
-    <div id="root">
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <>
+      <Header siteTitle={data.site.siteMetadata} />
       <GlobalStyle />
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
-    </div>
+      <div>
+        <main>{children}</main>
+        <footer>
+          © {new Date().getFullYear()}, Built with
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </footer>
+      </div>
+    </>
   );
 };
 

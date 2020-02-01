@@ -18,14 +18,20 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: inherit;
     }
 
+    ::selection {
+        color: ${colors.black};
+        background: ${colors.yellow};
+    }
+
     body {
         margin: 0;
         width: 100%;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background-color: ${colors.dark};
-        color: ${colors.lightGrey};
+        background-color: ${colors.night};
+        color: ${colors.slate};
         line-height: 1.5;
+        
     }
 
 `;
