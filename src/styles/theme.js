@@ -20,7 +20,11 @@ const theme = {
     yellow: '#ffdc00',
     accent: '#ffcc66',
   },
-  font: {},
+  fontSize: css`
+    ${media.desktop`fontSize: 200%;`};
+    ${media.tablet`fontSize:180%;`};
+    ${media.phablet`fontSize: 140%;`};
+  `,
   sidePadding: css`
     padding: 0 150px;
     ${media.desktop`padding: 0 100px;`};

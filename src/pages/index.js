@@ -9,18 +9,18 @@ const Container = styled.main`
   ${theme.sidePadding};
 `;
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Alec Chen" description="software engineer" />
+const IndexPage = ({ location }) => (
+  <Layout location={location}>
+    <SEO />
     <Container>
       <Intro></Intro>
     </Container>
   </Layout>
 );
 
-// IndexPage.propTypes = {
-//   location: PropTypes.object.isRequired,
-//   data: PropTypes.object.isRequired,
-// };
+IndexPage.propTypes = {
+  location: PropTypes.object.isRequired,
+  // data: PropTypes.object.isRequired,
+};
 
 export default IndexPage;

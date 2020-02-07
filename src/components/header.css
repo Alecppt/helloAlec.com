@@ -1,26 +1,25 @@
 .intro {
-    padding: 120px 100px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    max-width: 1440px;
-    margin: 0 auto;
+  padding: 120px 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .intro_hello {
-    font-size: 2.25rem;
+  font-size: 2.25rem;
 }
 .wave_hand {
-    background-image: url("../images/emojis/wave.png");
-    margin-left: 10px;
-
+  background-image: url('../images/emojis/wave.png');
+  margin-left: 10px;
 }
 .emoji {
-    width: 40px;
-    height:40px; 
-    background-position-x: 50%;
-    background-position-y: 50%;
-    background-size: contain;
-    display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-position-x: 50%;
+  background-position-y: 60%;
+  background-size: contain;
+  display: inline-block;
 }

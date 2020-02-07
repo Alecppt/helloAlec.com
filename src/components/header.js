@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import './header.css';
 
-const Header = ({ metadata }) => (
+const Header = () => (
   <>
     <header
       className="intro"
@@ -20,9 +20,5 @@ const Header = ({ metadata }) => (
     </header>
   </>
 );
-
-Header.defaultProps = {
-  metadata: PropTypes.object.isRequired,
-};
 
 export default Header;
