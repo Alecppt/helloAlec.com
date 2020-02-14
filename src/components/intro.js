@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { theme, media } from '@styles';
 import wave from '../images/emojis/wave.png';
@@ -9,9 +8,8 @@ const IntroContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  /* padding: 15% 15%; */
   font-size: 180%;
-  padding: 0 20%;
+  padding: 0 17%;
   line-height: 1.1;
   ${media.desktop`padding: 0% 10%;`};
   ${media.tablet`padding: 10% 18%;`};
@@ -35,10 +33,12 @@ const Hello = styled.p`
 `;
 const Name = styled.p`
   font-family: 'Inconsolata', monospace;
-  font-size: 60px;
+  font-size: 90px;
   color: ${colors.offWhite};
   font-weight: 1000;
-  margin: 20px 20px 20px 0;
+  margin: 20px 0 20px 0;
+  ${media.phablet`font-size: 55px;`}
+  ${media.tablet`font-size:80px;`}
 `;
 const Function = styled.span`
   color: ${colors.function};
@@ -67,7 +67,4 @@ const Intro = () => {
   );
 };
 
-// Intro.propTypes = {
-//   data: PropTypes.array.isRequired,
-// };
 export default Intro;
