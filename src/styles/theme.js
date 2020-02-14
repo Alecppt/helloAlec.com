@@ -15,10 +15,13 @@ const theme = {
     white: '#ffffff',
     green: '#bae67e',
     purple: '#7d0ce8',
-    red: '#ff0000',
+    red: '#f07178',
     orange: '#e8850c',
     yellow: '#ffdc00',
     accent: '#ffcc66',
+    violet: '#945EB8',
+    teal: '#80cbc4',
+    function: '#82aaff',
   },
   fontSize: css`
     ${media.desktop`fontSize: 200%;`};
@@ -26,10 +29,10 @@ const theme = {
     ${media.phablet`fontSize: 140%;`};
   `,
   sidePadding: css`
-    padding: 0 150px;
-    ${media.desktop`padding: 0 100px;`};
-    ${media.tablet`padding: 0 50;`};
-    ${media.phablet`padding: 0 25px;`};
+    padding: 0 10%;
+    ${media.desktop`padding: 0 10%;`};
+    ${media.tablet`padding: 0 5%;`};
+    ${media.phablet`padding: 0 5%;`};
   `,
   flexCenter: css`
     display: flex;

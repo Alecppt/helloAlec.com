@@ -3,17 +3,19 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { theme, media } from '@styles';
 import wave from '../images/emojis/wave.png';
-
+const { colors } = theme;
 const IntroContainer = styled.section`
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
-  display: flex;
   height: 100vh;
-  padding: 200px 200px;
+  /* padding: 15% 15%; */
   font-size: 180%;
-  ${media.phablet`font-size: 150%;
-  padding:100px 60px`};
+  padding: 0 20%;
+  line-height: 1.1;
+  ${media.desktop`padding: 0% 10%;`};
+  ${media.tablet`padding: 10% 18%;`};
+  ${media.phablet`padding: 5% 5% 5% 10%;`};
 `;
 
 const WaveHand = styled.span`
@@ -26,29 +28,39 @@ const WaveHand = styled.span`
   background-size: contain;
   display: inline-block;
 `;
+const Hello = styled.p`
+  font-size: ${props => props.size};
+  margin: 0 0 10px;
+  color: ${props => props.color};
+`;
+const Name = styled.p`
+  font-family: 'Inconsolata', monospace;
+  font-size: 60px;
+  color: ${colors.offWhite};
+  font-weight: 1000;
+  margin: 20px 20px 20px 0;
+`;
+const Function = styled.span`
+  color: ${colors.function};
+`;
 
 const Intro = () => {
   return (
     <div>
       <IntroContainer>
-        <p>
+        <Hello color={colors.orange} size="40px">
           Hello! <WaveHand />
-        </p>
-        <h1>
-          <span
-            style={{
-              fontSize: '25px',
-              fontWeight: 'normal',
-              marginRight: '20px',
-            }}
-          >
-            my name is
-          </span>
-          Alec Chen,
-        </h1>
-        <p>
-          an everlearning software engineer who build ,test and automate for the
-          web.
+        </Hello>
+        <Hello color={colors.teal}> My name is</Hello>
+        <Name>Alec Chen.</Name>
+        <p style={{ color: colors.grey }}>
+          I am an everlearning{' '}
+          <bold style={{ color: colors.red, fontWeight: 'bold' }}>
+            software engineer
+          </bold>{' '}
+          who <Function>build</Function>, <Function>test</Function> and{' '}
+          <Function>automate </Function>
+          for the web.
         </p>
       </IntroContainer>
     </div>
