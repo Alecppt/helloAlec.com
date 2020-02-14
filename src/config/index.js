@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'Alec Chen | Software Engineer',
   siteDescription:
-    'Alec Chen is a software engineer based in Vancouver, BC who focuses on writing clean, maintainable and efficient code',
+    'Alec Chen is a software engineer based in Vancouver BC, who enjoys on building, testing, and automating things for the Web.',
   siteKeywords:
     'Alec Chen, Alec, Chen, alecppt, software engineer, software developer',
   siteUrl: 'https://helloalec.com',

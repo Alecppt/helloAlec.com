@@ -59,8 +59,7 @@ const Intro = () => {
             software engineer
           </bold>{' '}
           who <Function>build</Function>, <Function>test</Function> and{' '}
-          <Function>automate </Function>
-          for the web.
+          <Function>automate </Function>things for the web.
         </p>
       </IntroContainer>
     </div>

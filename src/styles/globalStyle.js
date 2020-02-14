@@ -4,8 +4,8 @@ import { theme, media } from '@styles';
 const { colors } = theme;
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Inconsolata|Major+Mono+Display&display=swap');
-    /* @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
     html {
         font-family: 'Inconsolata', monospace;
         background-color: ${colors.dark};
